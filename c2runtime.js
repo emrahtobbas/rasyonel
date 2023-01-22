@@ -10267,7 +10267,7 @@ window["cr_setSuspended"] = function(s)
 			this.is_else_block = (this.conditions[0].type == null && this.conditions[0].func == cr.system_object.prototype.cnds.Else);
 		}
 	};
-	window["_c2hh_"] = "E2DD4C3F49D55698ED266C93DB90E5C649D49D1B";
+	window["_c2hh_"] = "C9D881AD61047B7C1701489D1CFC3690A86E3568";
 	EventBlock.prototype.postInit = function (hasElse/*, prevBlock_*/)
 	{
 		var i, len;
@@ -23054,27 +23054,31 @@ cr.getObjectRefTable = function () { return [
 	cr.plugins_.Arr,
 	cr.plugins_.Audio,
 	cr.plugins_.Function,
-	cr.plugins_.TiledBg,
-	cr.plugins_.Sprite,
 	cr.plugins_.Text,
+	cr.plugins_.Sprite,
 	cr.plugins_.Touch,
+	cr.plugins_.TiledBg,
 	cr.behaviors.DragnDrop,
 	cr.behaviors.Flash,
 	cr.system_object.prototype.cnds.OnLayoutStart,
 	cr.plugins_.Function.prototype.acts.CallFunction,
 	cr.plugins_.Sprite.prototype.acts.Destroy,
+	cr.system_object.prototype.acts.CreateObject,
 	cr.plugins_.Sprite.prototype.cnds.PickByUID,
 	cr.plugins_.Sprite.prototype.acts.SetAnimFrame,
 	cr.plugins_.Touch.prototype.cnds.OnTouchObject,
+	cr.plugins_.Sprite.prototype.cnds.IsBoolInstanceVarSet,
 	cr.system_object.prototype.acts.AddVar,
 	cr.system_object.prototype.acts.Wait,
-	cr.system_object.prototype.acts.CreateObject,
+	cr.plugins_.Sprite.prototype.acts.SetBoolInstanceVar,
+	cr.system_object.prototype.acts.SetVar,
+	cr.plugins_.Sprite.prototype.acts.SetOpacity,
+	cr.plugins_.Sprite.prototype.acts.SetPosToObject,
 	cr.system_object.prototype.cnds.Compare,
-	cr.system_object.prototype.acts.GoToLayout,
 	cr.plugins_.Function.prototype.cnds.OnFunction,
 	cr.plugins_.Arr.prototype.exps.Back,
 	cr.plugins_.Arr.prototype.acts.Pop,
-	cr.system_object.prototype.acts.SetVar,
+	cr.plugins_.Text.prototype.acts.SetText,
 	cr.system_object.prototype.cnds.While,
 	cr.plugins_.Arr.prototype.exps.Width,
 	cr.system_object.prototype.exps.floor,
@@ -23088,10 +23092,12 @@ cr.getObjectRefTable = function () { return [
 	cr.plugins_.Sprite.prototype.cnds.IsOverlapping,
 	cr.plugins_.Sprite.prototype.exps.AnimationFrame,
 	cr.behaviors.DragnDrop.prototype.acts.SetEnabled,
-	cr.plugins_.Sprite.prototype.acts.SetPos,
 	cr.behaviors.Flash.prototype.acts.Flash,
 	cr.plugins_.Audio.prototype.acts.Play,
 	cr.system_object.prototype.cnds.Else,
-	cr.system_object.prototype.acts.ResetGlobals
+	cr.plugins_.Sprite.prototype.acts.SetPos,
+	cr.system_object.prototype.acts.ResetGlobals,
+	cr.system_object.prototype.acts.GoToLayout,
+	cr.plugins_.Sprite.prototype.acts.RotateClockwise
 ];};
 
